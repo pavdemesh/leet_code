@@ -1,4 +1,4 @@
-def search_rotated_array(nums, target):
+def min_rotated_array(nums):
     left, right = 0, len(nums) - 1
 
     while left < right:
@@ -16,7 +16,6 @@ def search_rotated_array(nums, target):
     return left
 
 
-print(search_rotated_array([7, 0, 1, 2, 4, 5, 6], 6))
-print(search_rotated_array([4, 5, 6, 7, 0, 1, 2], 6))
-print(search_rotated_array([6, 7, 0, 1, 2, 4, 5], 6))
-
+print(min_rotated_array([7, 0, 1, 2, 4, 5, 6]))
+print(min_rotated_array([4, 5, 6, 7, 0, 1, 2]))
+print(min_rotated_array([6, 7, 0, 1, 2, 4, 5]))
